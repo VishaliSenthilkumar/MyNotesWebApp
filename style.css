@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(3, 3, 36);
+    font-family: sans-serif;
+}
+.head{
+    color: white;
+    text-align: center;
+    text-shadow: 0.3px 0.3px red;
+}
+::placeholder{
+    color:rgb(172, 182, 192)
+}
+input, .notes, button{
+    background-color: rgb(9, 9, 56);
+    color:white;
+    width:91vw;
+    padding:7px;
+    margin:9px;
+    border:2px solid rgb(120, 32, 32);
+    border-radius:5px;
+}
+
+.title{
+    height:3vh;
+    text-transform: capitalize;
+}
+
+.notes{
+    height:27vh;
+}
+
+button {
+    border: 2px solid rgb(148, 32, 32);
+    color:rgb(172, 182, 192);
+    height:30px;
+    width:70px;
+    border-radius:5px;
+    text-transform:uppercase;
+}
+.input, input:hover, .notes:hover, button:hover{
+    border: 2px solid rgb(222, 18, 18);
+    border-radius:5px;
+}
+button:hover{
+    color:white;
+    border-radius:5px;
+}
+button:active{
+    border: 2px solid white;
+}
+.container{
+    display:flex;
+    flex-flow:column nowrap;
+    color:rgb(226, 221, 221);
+}
+.new{
+    border: 2px solid rgb(85, 14, 14);
+    border-radius: 5px;
+    margin:5px;
+    padding:5px;
+    display:flex;
+    flex-flow: row;
+}
+.new:hover{
+    border: 2px solid red;
+    color: white;
+    border-radius:5px;
+}
+.new-item{
+    flex-basis: 100vw;
+    margin:5px;
+    padding:5px;
+    word-spacing: 1px;
+    line-height:25px;
+}
+.new-notes{
+    text-align:justify;
+}
+.new-btn{
+    flex-basis:10vw;
+    display:flex;
+    flex-flow:column;
+    justify-content: space-between;
+    flex-grow:1;
+}
+.delete{
+    margin-right:15px;
+    display:flex;
+    justify-content: space-between;
+}
+.hide{
+   display:none;
+}
+.visible{
+    display:visible;
+}
+
+@media only screen and (max-width:580px){
+    .title,.notes {width:85vw;}
+}
+
+@media only screen and (min-width:1100px){
+    .title,.notes {width:9 5vw;}
+}
